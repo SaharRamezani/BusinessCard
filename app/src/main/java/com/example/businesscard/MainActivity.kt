@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -32,7 +33,8 @@ class MainActivity : ComponentActivity() {
             BusinessCardTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
+                    // color = MaterialTheme.colorScheme.background
+                    color = Color.Yellow
                 ) {
                     BusinessCard()
                 }
@@ -74,7 +76,7 @@ fun ContactInfo() {
         verticalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         ContactRow(R.drawable.baseline_local_phone_24, "3165264589")
-        ContactRow(R.drawable.baseline_alternate_email_24, "sahar.ramezani.jolfaie@gmail.com")
+        ContactRow(R.drawable.baseline_alternate_email_24, "sahar.ramezani@unige.com")
         ContactRow(R.drawable.baseline_account_circle_24, "https://github.com/SaharRamezani")  // Use custom drawable
     }
 }
